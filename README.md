@@ -20,6 +20,7 @@
 - [Frontend github repo link](https://github.com/KirkBetzina/mintbeanCardGame.git)
 - [Frontend deployment link](https://angry-volhard-52c28f.netlify.app)
 
+## Backend Repo and Deployment -- Still In Development
 - [ Backend github repo link](https://github.com/KirkBetzina/mintbeanBackend.git)
 - [ Backend deployment link](https://mintbean-cards-backend.herokuapp.com/)
 
@@ -32,7 +33,7 @@ We are excited to develop a WARRRRRRR!!!!!!! card game app. Have you ever had a 
 ![Our Splash Page](https://i.imgur.com/F3bGk4N.png)
 
 
-
+**API Call**
 
 ```
 {
@@ -66,16 +67,17 @@ We are excited to develop a WARRRRRRR!!!!!!! card game app. Have you ever had a 
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-#### MVP EXAMPLE
-- You can build any game you'd like. Whether it's poker, blackjack, or just high-card wins, as long as it sticks to the following requirements:
-- Your game must be at least as complex as War.
-- Your game must be played with cards from the standard 52-card deck.
-- Your game must have a clear win condition. For example, in some games, getting rid of all your cards.
-- Your game must have a clear lose condition. For example, in some games, scoring the lowest number of points.
-- Accidental duplications of a card will be considered a bug, for which you will lose points. (See the scoring rubric for more details on how bugs affect your score)
+#### MVP 
+- Login Dummy Page
+- Splash Page
+- Instructional Modal 
+- An interactive version of War using the standard 52-card deck
+- The game will have clear win and lose conditions
+- External API calls are made
+
 
 #### Estimated Project Timeframe Table
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
+
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
@@ -88,14 +90,15 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Total | H | 51hrs| 60hrs | 60hrs |
 
 ## Additional Libraries
-Reactstrap or bootstrap for modals and warnings 
-Redux toolkit
+-Reactstrap or bootstrap for modals and warnings 
+-Redux Toolkit
 
 ## Code Snippet
 
+This code is an example of Redux Tool Kit's slice functionality, which allows state to be segregated into pieces that, for the developer's purposes, are treated as individual. The advantage of this is that potentially very complex state becomes much more manageable for the developer, and the code is far easier to read. 
 
-
-`export const discardPileSlice = createSlice({
+```
+export const discardPileSlice = createSlice({
     name: "discardPile",
     initialState: {
        discardPile: []
@@ -109,6 +112,5 @@ Redux toolkit
         }
     }
 })
-``
 
 ```
