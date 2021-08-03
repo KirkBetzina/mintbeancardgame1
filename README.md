@@ -90,8 +90,8 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 | Total | H | 51hrs| 60hrs | 60hrs |
 
 ## Additional Libraries
--Reactstrap or bootstrap for modals and warnings 
--Redux Toolkit
+- Reactstrap or bootstrap for modals and warnings 
+- Redux Toolkit
 
 ## Code Snippet
 
