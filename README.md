@@ -93,9 +93,10 @@ Redux toolkit
 
 ## Code Snippet
 
+This code is an example of Redux Tool Kit's slice functionality, which allows state to be segregated into pieces that, for the developer's purposes, are treated as individual. The advantage of this is that potentially very complex state becomes much more manageable for the developer, and the code is far easier to read. 
 
-
-`export const discardPileSlice = createSlice({
+```
+export const discardPileSlice = createSlice({
     name: "discardPile",
     initialState: {
        discardPile: []
@@ -109,6 +110,5 @@ Redux toolkit
         }
     }
 })
-``
 
 ```
